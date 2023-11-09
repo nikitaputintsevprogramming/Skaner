@@ -12,7 +12,7 @@ namespace UI.Pagination
         [SerializeField] private Text _textCount; // Ссылка на компонент текста
         [SerializeField] private UnityEngine.Video.VideoPlayer _skanVideo;
 
-        [SerializeField] private int upNumber;
+        [SerializeField] public int upNumber;
 
         private float counter;
 
@@ -26,6 +26,7 @@ namespace UI.Pagination
         {
             if (gameObject.activeSelf && counter <= upNumber)
             {
+                _textCount.gameObject.SetActive(false);
                 counter += 100 / (float)_skanVideo.length * Time.deltaTime; // Увеличиваем счетчик на пропорциональное значение в каждом кадре
                 _textCount.text = Mathf.Round(counter).ToString(); // Отображаем значение счетчика
             }

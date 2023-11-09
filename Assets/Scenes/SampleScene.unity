@@ -771,6 +771,7 @@ GameObject:
   - component: {fileID: 546156912}
   - component: {fileID: 546156911}
   - component: {fileID: 546156910}
+  - component: {fileID: 546156914}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -860,6 +861,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &546156914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546156909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e377708a990492043bac57351bf8b081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "_the\u0421lockIsTicking": 0
+  _OnShitTheTimeIsReset: 0
+  _timeForAlahAkbar: 120
 --- !u!1 &564285941
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,10 +1619,10 @@ RectTransform:
   m_Father: {fileID: 1053737206}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.27970377, y: 0}
-  m_AnchorMax: {x: 0.7277037, y: 0.12783334}
-  m_AnchoredPosition: {x: -4, y: 2.5}
-  m_SizeDelta: {x: 16, y: 5}
+  m_AnchorMin: {x: 0.27788892, y: 0.4241667}
+  m_AnchorMax: {x: 0.74262965, y: 0.54843754}
+  m_AnchoredPosition: {x: 1.5, y: 3.5}
+  m_SizeDelta: {x: -2, y: 11}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &958342625
 MonoBehaviour:
@@ -1621,7 +1637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.83921576, g: 0.9450981, b: 0, a: 1}
+  m_Color: {r: 0.57254905, g: 0.38431376, b: 0.8745099, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1634,14 +1650,14 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 300
+    m_MaxSize: 100
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 90%
 --- !u!222 &958342626
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2578,7 +2594,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4264d3ec038e56449a358369b04a807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HorSlider: {fileID: 464422668}
   _textCount: {fileID: 958342625}
+  _skanVideo: {fileID: 1053737207}
+  upNumber: 0
 --- !u!1 &1581155176
 GameObject:
   m_ObjectHideFlags: 0
